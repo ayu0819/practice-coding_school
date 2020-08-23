@@ -1,8 +1,8 @@
+/* common css */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +10,416 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+::selection {
+  background: #00b3b3;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #00b3b3;
+  color: #fff;
+}
+
+ul {
+  padding-inline-start: 0 !important;
+}
+
+h1 {
+  color: #ff921e;
+  font-weight: bold !important;
+  font-family: 'Ubuntu', sans-serif !important;
+  font-size: 25px !important;
+  margin-bottom: 0 !important;
+}
+
+
+/* common */
+
+.common {
+  padding: 10px 20px;
+}
+
+
+/* Bootstrap Remodeling css */
+
+
+/* faq */
+
+.faq__indent {
+  text-indent: 3.5em;
+}
+
+.faq__detail {
+  padding-bottom: 25px;
+}
+
+.faq__question {
+  position: relative;
+  margin-top: 0;
+  padding: 35px 16px 20px 15px;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  /* cursor: pointer; */
+}
+
+.faq__answer {
+  position: relative;
+  margin-top: 0;
+  padding: 22px 16px 0px 15px;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  /* cursor: pointer; */
+}
+
+.faq__question::before {
+  /* font-family: "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif; */
+  content: "Q";
+  display: inline-block;
+  background-color: #008b9b;
+  margin-right: 1.5vw;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.faq__answer::before {
+  /* font-family: "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif; */
+  content: "A";
+  display: inline-block;
+  background-color: #ffa929;
+  margin-right: 1.5vw;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+
+/* btn */
+
+.btn-lg {
+  width: 100%;
+  max-width: 400px !important;
+}
+
+
+/* card */
+
+.card-header:first-child {
+  border-radius: 0;
+}
+
+.card-header {
+  cursor: pointer;
+  background-color: #ff921e !important;
+  color: #fff;
+  border: none !important;
+  text-align: center;
+}
+
+.card-footer {
+  cursor: pointer !important;
+}
+
+.card-title {
+  padding: 0.8rem !important;
+  margin: 0 !important;
+}
+
+.card .card-header {
+  margin-bottom: 0px !important;
+}
+
+
+/* Jumbotron */
+
+.Jumbotron__title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 3vw !important;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+
+.Jumbotron__background {
+  background-image: url(http://hudehisa.sakura.ne.jp/test_image/coding__main-img-mb.png);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: 100vw;
+  margin-bottom: 2rem;
+  padding: 40vw 20vw 55vw 20vw;
+}
+
+.Jumbotron__titles {
+  display: none;
+}
+
+
+/* move */
+
+.show {
+  border: 1px solid rgba(0, 0, 0, .125) !important;
+}
+
+
+/* Accordion */
+
+.Accordion {
+  width: 100%;
+  max-width: 600px !important;
+}
+
+.accordion>.card:first-of-type {
+  border: none;
+}
+
+
+/* about */
+
+.about {
+  justify-content: center;
+}
+
+
+/* toggle */
+
+.toggle__text {
+  padding-right: 10px;
+}
+
+
+/* application */
+
+.application-list {
+  /* border-top: 2px solid rgba(112, 112, 112, 0.2); */
+  padding: 20px 0 5px 0;
+}
+
+
+/* icon common css */
+
+.colour__top {
+  color: #fff;
+  position: fixed;
+  bottom: 7vw;
+  right: 2vw;
+  background: hsla(0, 0%, 42%, .6);
+  border-radius: 50%;
+  /* padding: 0.5vw; */
+  cursor: pointer;
+  max-width: 70px;
+  display: none;
+}
+
+.top__icon {
+  padding: 10px;
+  font-size: 40px;
+}
+
+
+/* header */
+
+.header__icon {
+  font-size: 50px;
+  padding-left: 15px;
+}
+
+
+/* footer */
+
+.footer {
+  background-color: rgb(40, 40, 40);
+  width: 100%;
+  color: #fff;
+  padding: 15px;
+}
+
+.footer__icon {
+  font-size: 60px;
+  padding-left: 20px;
+}
+
+
+/* icon colour css  */
+
+.colour__twitter {
+  color: #00acee;
+}
+
+.colour__facebook {
+  color: #3b5998;
+}
+
+.colour__line {
+  color: #00B900;
+}
+
+.colour__right, .colour__up {
+  color: #fff;
+}
+
+.carousel-inner {
+  max-width: 500px !important;
+}
+
+.colour__top {
+  color: #fff;
+}
+
+.catch {
+  font-weight: bold;
+  color: #ff921e;
+}
+
+
+/* original css */
+
+.ReactModal__Content {
+  text-align: center;
+}
+
+.ReactModal__text {
+  padding: 5vw 0 5vw 0;
+  text-align: left;
+  width: 100%;
+  max-width: 410px;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.5vw;
+}
+
+.ReactModal__img {
+  width: 100%;
+  max-width: 40vw;
+}
+
+.ReactModal__title {
+  font-weight: bold;
+  padding: 1vw 0 4vw 0;
+  font-size: 2.2vw;
+}
+
+.contents__fix {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px
+}
+
+.sample__fix {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.card__fix {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card__padding {
+  margin-top: 15px;
+}
+
+.cv__btn {
+  width: 500px !important;
+}
+
+.cv {
+  position: fixed;
+  background: hsla(0, 0%, 42%, .6);
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 110px;
+  right: 15px;
+  background: #ff921e;
+  border-radius: 50%;
+  padding: 0.5vw;
+  cursor: pointer;
+}
+
+
+/* nav */
+
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1150px;
+}
+
+.nav__title {
+  width: 100%;
+  max-width: 200px;
+  padding: 5px 0 5px 0;
+}
+
+
+/* list */
+
+.list-group-item {
+  border: 0;
+  padding: 0 !important;
+}
+
+
+/* mobile css */
+
+@media (min-width: 576px) {
+  /* Jumbotron */
+  .Jumbotron__background {
+    padding: 13.5vw;
+    background-image: url(http://hudehisa.sakura.ne.jp/test_image/coding__main-img.png);
+    background-size: cover;
+  }
+  .Jumbotron__titles {
+    display: block;
+  }
+  /* original css */
+  .cv__btn {
+    display: block;
+  }
+  .top-btn {
+    bottom: 110px;
+  }
+  .card__fix {
+    width: 100%;
+    max-width: 350px;
+  }
+  .card__padding {
+    margin-right: 15px;
+  }
+  .ReactModal__text {
+    font-size: 15px;
+    padding: 40px 0 40px 0;
+  }
+  .ReactModal__title {
+    padding: 10px 0 30px 0;
+    font-size: 25px;
+  }
+  .ReactModal__img {
+    width: 400px;
+    ;
+  }
 }
